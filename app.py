@@ -8,7 +8,7 @@ with open("model1.pkl", "rb") as f:
 
 st.title("Diabetes Prediction System 🩺")
 
-st.subheader("Enter Patient Details")break
+st.subheader("Enter Patient Details")
 
 # Pregnancies: dropdown (0–10 + 'More than 10')
 pregnancy_options = list(range(0, 11)) + ["More than 10"]
