@@ -5,3 +5,7 @@ pandas
 shap
 matplotlib
 seaborn
+scipy
+statsmodels
+imblearn
+pickle

@@ -1,6 +1,20 @@
 import streamlit as st
 import pickle
+import sklearn
 import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns 
+import missingno as msno
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn.model_selection import train_test_split
+from scipy.stats import pointbiserialr
+from imblearn.over_sampling import SMOTE
+import statsmodels.api as sm
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, confusion_matrix, classification_report
+from sklearn.model_selection import GridSearchCV
+import shap
 
 # Load trained model
 with open("model1.pkl", "rb") as f:
